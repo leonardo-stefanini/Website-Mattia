@@ -41,7 +41,7 @@ flex-direction: column;
 margin-left: 10%;
 margin-right: 50%;
 }
-.commenti-input{height: 100px;border: 1px solid black;text-align:left;vertical-align: text-top;;}
+.commenti-input{width: 80%;height: 100px;}
 .commenti h4,input,button{margin: 20px 0;}
 
 
