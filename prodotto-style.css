@@ -41,8 +41,26 @@ flex-direction: column;
 margin-left: 10%;
 margin-right: 50%;
 }
-.commenti-input{width: 80%;height: 100px;}
-.commenti h4,input,button{margin: 20px 0;}
+.commenti-input{max-width: 80%;max-height:100px;min-width: 80%;min-height:100px ;}
+.commenti h3,input,button{margin: 20px 0;}
+
+.box-commenti{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.descrizione{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.foto-testo{display: flex;align-items: center;}
+.immagine-prodotto{height: 80px;}
+.acquisto-verificato img{height: 15px;}
+
+
 
 
 
