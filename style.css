@@ -98,7 +98,6 @@ Smartphone
     .cover{height: 70%;width: 100%;left: 0;}
     #card-1{flex-direction: column-reverse;}
     #card-2{flex-direction: column;}
-    #card-3{flex-direction: column-reverse;}
     .card img{width: 90%;}
     .contenuto{width: 90%;margin-top: 20px;}
     .card{margin-bottom: 40px;}
