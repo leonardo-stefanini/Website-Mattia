@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/carrello-style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header clearfix">
         <img src="/assets/img/tooth.svg" alt="" srcset="">
-        <a href=""  class="header__icon-bar">
+        <a href="" class="header__icon-bar">
             <span></span>
             <span></span>
             <span></span>
@@ -29,10 +31,10 @@
             <h6>Price</h6>
         </div>
         <div class="prodotto-aggiunto">
-            <img  class="immagine-prodotto" src="/assets/img/cocco.jpg" alt="" srcset="">
-            
-                
-             <div class="quantità">
+            <img class="immagine-prodotto" src="/assets/img/cocco.jpg" alt="" srcset="">
+
+
+            <div class="quantità">
                 <button class="meno-quantità">-</button>
                 <p class="numero-quantità">50</p>
                 <button class="più-quantità">+</button>
@@ -50,15 +52,8 @@
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-       $(".header__icon-bar").click(function(e){
-              $(".header__menu").toggleClass('is-open');
-              e.preventDefault();
-       });
-    });
-    </script>   
-    
-    
+    <script type="text/javascript" src="/assets/js/header.js"></script>
+
 </body>
+
 </html>

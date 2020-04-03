@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,81 +17,70 @@
 
 <body>
 
-<header class="header clearfix">
-    <img src="/assets/img/tooth.svg" alt="" srcset="">
-    <a href="" class="header__icon-bar">
-        <span></span>
-        <span></span>
-        <span></span>
-    </a>
-    <ul class="header__menu animate">
-        <li class="header__menu__item"><a href="/views/index.html">Home</a></li>
-        <li class="header__menu__item"><a href="#">FAQs</a></li>
-        <li class="header__menu__item"><a href="/views/log-in.html">Log in</a></li>
-        <li class="header__menu__item"><a href="/view/carrello.html">Cart</a></li>
-    </ul>
-</header>
+    <header class="header clearfix">
+        <img src="/assets/img/tooth.svg" alt="" srcset="">
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="/views/index.html">Home</a></li>
+            <li class="header__menu__item"><a href="/views/log-in.html">Log in</a></li>
+            <li class="header__menu__item"><a href="/view/carrello.html">Cart</a></li>
+            <li class="header__menu__item"><a href="#">Infos</a></li>
+        </ul>
+    </header>
 
-<section class="cover animate">
-</section>
+    <section class="cover animate">
+    </section>
 
-<section class="container">
-    <div class="card" id="card-1">
-        <div class="contenuto">
-            <h3>The easiest, most effective way to whiten your teeth at home</h3>
-            <p class="descrizione">The HiSmile™ Teeth Whitening Kit is an at-home teeth whitening solution, designed to whiten and brighten teeth without pain or sensitivity.</p>
-            <a class="btn-card" href="/views/carrello.html">Add to cart</a>
+    <section class="container">
+        <div class="card" id="card-1">
+            <div class="contenuto">
+                <h3 style="text-transform: uppercase">The easiest, most effective way to whiten your teeth at home</h3>
+                <p class="descrizione">The HiSmile™ Teeth Whitening Kit is an at-home teeth whitening solution, designed to whiten and brighten teeth without pain or sensitivity.</p>
+                <a class="btn-card" href="/views/carrello.html">Add to cart</a>
+            </div>
+            <img src="/assets/img/cocco.jpg" alt="" srcset="">
         </div>
-        <img src="/assets/img/cocco.jpg" alt="" srcset="">
-    </div>
-    <div class="card" id="card-2">
-        <img src="/assets/img/dentifricio.jpg" alt="" srcset="">
-        <div class="contenuto">
-            <h3>The easiest, most effective way to whiten your teeth at home</h3>
-            <p class="descrizione">The HiSmile™ Teeth Whitening Kit is an at-home teeth whitening solution, designed to whiten and brighten teeth without pain or sensitivity.</p>
-            <a class="btn-card" href="/views/pagina-prodotto.html">Learn more</a>
+        <div class="card" id="card-2">
+            <img src="/assets/img/dentifricio.jpg" alt="" srcset="">
+            <div class="contenuto">
+                <h3 style="text-transform: uppercase">The easiest, most effective way to whiten your teeth at home</h3>
+                <p class="descrizione">The HiSmile™ Teeth Whitening Kit is an at-home teeth whitening solution, designed to whiten and brighten teeth without pain or sensitivity.</p>
+                <a class="btn-card" href="/views/pagina-prodotto.html">Learn more</a>
+            </div>
+
         </div>
 
-    </div>
-  
-</section>
+    </section>
 
-<footer>
-    <div class="footer-section">
-        <h4>Shop</h4>
-        <a href="#">Teeth Whitening kit</a>
-        <a href="#">Shop all products</a>
-        <a href="#">Gift & Sets</a>
-    </div>
-    <div class="footer-section">
-        <h4>Shop</h4>
-        <a href="#">Teeth Whitening kit</a>
-        <a href="#">Shop all products</a>
-        <a href="#">Gift & Sets</a>
-    </div>
-    <div class="footer-section">
-        <h4>Shop</h4>
-        <a href="#">Teeth Whitening kit</a>
-        <a href="#">Shop all products</a>
-        <a href="#">Gift & Sets</a>
-    </div>
+    <footer>
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <a href="#">Teeth Whitening kit</a>
+            <a href="#">Shop all products</a>
+            <a href="#">Gift & Sets</a>
+        </div>
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <a href="#">Teeth Whitening kit</a>
+            <a href="#">Shop all products</a>
+            <a href="#">Gift & Sets</a>
+        </div>
+        <div class="footer-section">
+            <h4>Shop</h4>
+            <a href="#">Teeth Whitening kit</a>
+            <a href="#">Shop all products</a>
+            <a href="#">Gift & Sets</a>
+        </div>
 
-</footer>
-
-
-
-
-
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-       $(".header__icon-bar").click(function(e){
-              $(".header__menu").toggleClass('is-open');
-              e.preventDefault();
-       });
-    });
-    </script>
+    <script type="text/javascript" src="/assets/js/header.js"></script>
+
 </body>
 
 </html>

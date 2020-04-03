@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/log-in-style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header clearfix">
         <img src="/assets/img/tooth.svg" alt="" srcset="">
@@ -22,27 +24,21 @@
         </ul>
     </header>
 
-        <div class="box">
-            <h5>Email</h5>
-            <input class="email-input" type="text" name="" placeholder="Email">
-            <h5>Password</h5>
-            <input class="password-input" type="text" name="" placeholder="Password">
-            <div><button class="btn">Accedi</button></div>
-            <div>
-                <span>not already registered?</span>
-                <a class="registrati-link" href="#">Click Here!</a>
-            </div>
+    <div class="box">
+        <h5>Email</h5>
+        <input class="email-input" type="text" name="" placeholder="Email">
+        <h5>Password</h5>
+        <input class="password-input" type="text" name="" placeholder="Password">
+        <div><button class="btn">Accedi</button></div>
+        <div>
+            <span>not already registered?</span>
+            <a class="registrati-link" href="#">Click Here!</a>
         </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-           $(".header__icon-bar").click(function(e){
-                  $(".header__menu").toggleClass('is-open');
-                  e.preventDefault();
-           });
-        });
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/header.js"></script>
 
 </body>
+
 </html>
