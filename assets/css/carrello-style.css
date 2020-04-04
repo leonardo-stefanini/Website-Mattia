@@ -1,0 +1,97 @@
+@import url(/assets/css/style.css);
+
+.cart {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.legenda {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid black;
+}
+
+.prodotto-aggiunto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid black;
+}
+
+.immagine-prodotto {
+  height: 100px;
+}
+
+.quantità {
+  display: flex;
+  align-items: center;
+  margin-right: 7%;
+}
+
+.quantità p {
+  margin: 0 7px;
+}
+
+.totale {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 0.5px solid black;
+}
+
+.prezzo-totale {
+  margin-left: 10px;
+}
+
+.box-btn-checkout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-card {
+  width: 20%;
+}
+
+.plus {
+  padding: 3px 8px;
+  width: 100%;
+}
+
+.minus {
+  padding: 3px 9px;
+  width: 100%;
+}
+
+.checkout {
+  padding: 15px 60px;
+}
+
+.remove-all {
+  padding: 7px;
+}
+
+.legenda,
+.prodotto-aggiunto,
+.totale,
+.box-btn-checkout {
+  margin: 30px 0;
+  padding: 10px 0;
+}
+
+@media(max-width:767px) {
+
+  .cart {
+      padding-top: 100px;
+      padding-left: 3%;
+      padding-right: 3%;
+  }
+
+  .quantità {
+      margin-right: 12%;
+  }
+
+
+}

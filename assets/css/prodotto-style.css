@@ -1,0 +1,85 @@
+@import url("/assets/css/style.css");
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-top: 130px;
+    margin-top: 0;
+}
+
+.card img {
+    width: 30%;
+}
+
+.descrizione {
+    margin: 40px 0;
+}
+
+.commenti {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 50%;
+    margin-bottom: 80px;
+}
+
+.commenti-input {
+    max-width: 500px;
+    width: 100%;
+    resize: none;
+    border: solid 1px var(--color-black);
+}
+
+.commenti h3,
+input,
+button {
+    margin: 20px 0;
+}
+
+.box-commenti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 0.5px solid black;
+    padding: 10px;
+    border-top: 2px solid black;
+}
+
+.informazioni {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.foto-testo {
+    display: flex;
+    align-items: center;
+}
+
+.immagine-prodotto {
+    height: 80px;
+}
+
+.acquisto-verificato img {
+    height: 15px;
+}
+
+.contenuto-commento {
+    margin-left: 10%;
+}
+
+.nome,
+.foto-testo,
+.acquisto-verficato {
+    margin: 10px 0;
+}
+
+.immagine-prodotto {
+    margin-right: 20px;
+}

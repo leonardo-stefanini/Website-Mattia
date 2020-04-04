@@ -1,0 +1,46 @@
+@import url(/assets/css/style.css);
+
+.box {
+  padding-top: 200px;
+  text-align: center;
+  margin: 0 10% 10% 10%;
+}
+
+.box input {
+  border: 1px solid var(--color-black);
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  outline: 0 !important;
+  transition: ease-out 0.15s;
+}
+
+.box input:focus::placeholder{
+  opacity: 0;
+  transition: ease-out 0.15s;
+  padding-left: 10px;
+}
+
+
+.box h5 {
+  font-size: 1.1em;
+  margin: 20px;
+}
+
+.btn-card {
+  padding: 7px;
+  margin: 20px;
+  width: 90px;
+}
+
+
+.info span {
+  font-size: 0.8em;
+}
+
+.info a {
+  text-decoration: underline;
+  font-size: 0.8em;
+  color: var(--color-black);
+}
+
