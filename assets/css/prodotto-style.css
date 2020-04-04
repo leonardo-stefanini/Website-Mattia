@@ -83,3 +83,24 @@ button {
 .immagine-prodotto {
     margin-right: 20px;
 }
+@media(max-width:767px){
+    .card{
+    padding-top: 90px;
+    margin-bottom: 60px;}
+
+    .card img{width:80%;}
+
+    .descrizione{margin: 20px 0;}
+
+    .btn-card{width:54%;}
+
+    .commenti{
+        margin-right: 10%;
+        margin-bottom: 60px;
+    }
+
+    .box-commenti{flex-direction: column;}
+
+    .informazioni{margin-bottom: 30px;}
+
+}
