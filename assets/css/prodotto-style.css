@@ -1,80 +1,4 @@
-html,
-body {
-    height: 100%;
-}
-
-body {
-    background: white;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.animate {
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-a {
-    text-decoration: none;
-}
-
-.header img {
-    height: 30px;
-    float: left;
-    position: relative;
-    margin-left: 30px;
-    margin-top: 15px;
-}
-
-.header {
-    background: #333;
-    font-weight: bold;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    display: block;
-}
-
-.header__menu {
-    float: right;
-    margin: 0;
-    padding: 0;
-}
-
-.header__menu__item {
-    display: inline-block;
-}
-
-.header__menu__item a {
-    color: #fff;
-    display: block;
-    padding: 20px;
-}
-
-.header__menu__item a:hover {
-    background: #000
-}
-
-.header__icon-bar {
-    display: block;
-    float: right;
-    padding: 20px;
-    display: none;
-}
-
-.header__icon-bar span {
-    display: block;
-    height: 3px;
-    width: 30px;
-    background: #fff;
-    margin-bottom: 5px;
-}
-
+@import url("/assets/css/style.css");
 
 .card {
     display: flex;
@@ -82,31 +6,11 @@ a {
     align-items: center;
     margin-bottom: 100px;
     padding-top: 130px;
+    margin-top: 0;
 }
 
 .card img {
     width: 30%;
-}
-
-.contenuto {
-    margin: 0 40px;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-#btn-pagina-singola {
-    width: 40%;
-    padding: 10px;
-    background: #333;
-    color: white;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-#btn-pagina-singola:hover {
-    background: #000;
 }
 
 .descrizione {
@@ -123,10 +27,10 @@ a {
 }
 
 .commenti-input {
-    max-width: 80%;
-    max-height: 100px;
-    min-width: 80%;
-    min-height: 100px;
+    max-width: 500px;
+    width: 100%;
+    resize: none;
+    border: solid 1px var(--color-black);
 }
 
 .commenti h3,
@@ -143,6 +47,7 @@ button {
     margin-right: 10%;
     border-bottom: 0.5px solid black;
     padding: 10px;
+    border-top: 2px solid black;
 }
 
 .informazioni {
@@ -177,38 +82,4 @@ button {
 
 .immagine-prodotto {
     margin-right: 20px;
-}
-
-
-
-
-
-
-
-
-@media (max-width: 767px) {
-    .header {
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-    }
-
-    .header__icon-bar {
-        display: block;
-    }
-
-    .header__menu {
-        width: 100%;
-        height: 0px;
-        overflow: hidden;
-    }
-
-    .header__menu__item {
-        display: block;
-    }
-
-    .is-open {
-        height: 250px;
-        overflow: auto;
-    }
 }

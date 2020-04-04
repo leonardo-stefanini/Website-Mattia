@@ -1,81 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+@import url(/assets/css/style.css);
 
-a {
-  text-decoration: none;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  background: white;
-}
-
-.animate {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-/*HEADER*/
-.header img {
-  height: 30px;
-  float: left;
-  position: relative;
-  margin-left: 30px;
-  margin-top: 15px;
-}
-
-.header {
-  background: #333;
-  font-weight: bold;
-}
-
-.header__menu {
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-.header__menu__item {
-  display: inline-block;
-}
-
-.header__menu__item a {
-  color: #fff;
-  display: block;
-  padding: 20px;
-}
-
-.header__menu__item a:hover {
-  background: #000
-}
-
-.header__icon-bar {
-  display: block;
-  float: right;
-  padding: 20px;
-  display: none;
-}
-
-.header__icon-bar span {
-  display: block;
-  height: 3px;
-  width: 30px;
-  background: #fff;
-  margin-bottom: 5px;
-}
-
-
-
-
-/*Carrello*/
 .cart {
   padding-top: 70px;
   display: flex;
@@ -111,20 +35,6 @@ body {
   margin: 0 7px;
 }
 
-.quantità button {
-  background: #333;
-  color: white;
-  border: none;
-}
-
-.più-quantità {
-  padding: 10px 9px;
-}
-
-.meno-quantità {
-  padding: 10px;
-}
-
 .totale {
   display: flex;
   justify-content: flex-end;
@@ -141,10 +51,18 @@ body {
   justify-content: space-between;
 }
 
-.box-btn-checkout button {
-  background: #333;
-  color: white;
-  border: none;
+.btn-card {
+  width: 20%;
+}
+
+.plus {
+  padding: 3px 8px;
+  width: 100%;
+}
+
+.minus {
+  padding: 3px 9px;
+  width: 100%;
 }
 
 .checkout {
@@ -163,70 +81,7 @@ body {
   padding: 10px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-* html .clearfix {
-  zoom: 1;
-}
-
-*:first-child+html .clearfix {
-  zoom: 1;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-
-
-
 @media(max-width:767px) {
-  .header {
-      position: fixed;
-      z-index: 100;
-      width: 100%;
-  }
-
-  .header__icon-bar {
-      display: block;
-  }
-
-  .header__menu {
-      width: 100%;
-      height: 0px;
-      overflow: hidden;
-  }
-
-  .header__menu__item {
-      display: block;
-  }
-
-  .is-open {
-      height: 250px;
-      overflow: auto;
-  }
 
   .cart {
       padding-top: 100px;
