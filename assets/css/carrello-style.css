@@ -28,7 +28,8 @@
 .quantità {
   display: flex;
   align-items: center;
-  margin-right: 7%;
+  margin-right: 5%;
+  
 }
 
 .quantità p {
@@ -90,7 +91,7 @@
   }
 
   .quantità {
-      margin-right: 12%;
+      margin-right: 8%;
   }
 
   
