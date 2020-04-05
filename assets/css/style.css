@@ -88,7 +88,7 @@ a {
 .cover {
   height: 80%;
   width: 85%;
-  background-image: url("/assets/img/custom.jpg");
+  background-image: url("/Website-Mattia/assets/img/custom.jpg");
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
