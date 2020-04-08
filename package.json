@@ -1,0 +1,26 @@
+{
+  "name": "website-mattia",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardo-stefanini/Website-Mattia.git"
+  },
+  "author": "Erald Xholi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardo-stefanini/Website-Mattia/issues"
+  },
+  "homepage": "https://github.com/leonardo-stefanini/Website-Mattia#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
