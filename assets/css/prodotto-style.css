@@ -16,6 +16,20 @@
 .descrizione {
     margin: 40px 0;
 }
+.btn-select-checkout{
+    display: flex;
+    align-items: center;
+}
+.quantità{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+.numero-quantità{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .commenti {
     display: flex;
@@ -47,7 +61,6 @@ button {
     margin-right: 10%;
     border-bottom: 0.5px solid black;
     padding: 10px;
-    border-top: 2px solid black;
 }
 
 .informazioni {
