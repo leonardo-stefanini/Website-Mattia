@@ -28,8 +28,16 @@
     
 }
 
+.sign {
+    height: 30px;
+    width: 30px;
+}
+
 .fa, .fas {
     font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .numero-quantità{
@@ -117,6 +125,8 @@ button {
     .descrizione{margin: 20px 0;}
 
     .btn-card{width:54%;}
+
+    .sign {width: 100% !important;}
 
     /*.commenti{
         margin-right: 10%;
