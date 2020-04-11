@@ -20,18 +20,28 @@
     display: flex;
     align-items: center;
 }
+
 .quantità{
     margin-left: 40px;
     display: flex;
     align-items: center;
     
 }
+
+.fa, .fas {
+    font-size: 0.5rem;
+}
+
 .numero-quantità{
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.commenti {
+.prezzo {
+    margin-bottom: 5%;
+}
+
+/*.commenti {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -95,7 +105,8 @@ button {
 
 .immagine-prodotto {
     margin-right: 20px;
-}
+}*/
+
 @media(max-width:767px){
     .card{
     padding-top: 90px;
@@ -107,13 +118,13 @@ button {
 
     .btn-card{width:54%;}
 
-    .commenti{
+    /*.commenti{
         margin-right: 10%;
         margin-bottom: 60px;
     }
 
     .box-commenti{flex-direction: column;}
 
-    .informazioni{margin-bottom: 30px;}
+    .informazioni{margin-bottom: 30px;}*/
 
 }

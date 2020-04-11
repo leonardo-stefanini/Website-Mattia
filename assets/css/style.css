@@ -48,6 +48,7 @@ a {
   z-index: 100;
   display: block;
   text-transform: uppercase;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .55);
 }
 
 .header__menu {
@@ -136,6 +137,7 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.3s;
+  
 }
 
 
@@ -227,6 +229,7 @@ footer {
       width: 100%;
       left: 0;
   }
+  
 
   #card-1 {
       flex-direction: column-reverse;
