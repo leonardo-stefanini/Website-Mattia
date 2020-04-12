@@ -1,0 +1,47 @@
+@import url(/assets/css/style.css);
+
+
+.grid{
+    margin-top: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+.titolo-input{
+    margin-bottom: 10px;
+}
+
+.box-input {
+    border: 1px solid var(--color-black);
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    outline: 0 !important;
+    transition: ease-out 0.15s;
+  }
+  
+  .box-input:focus::placeholder{
+    opacity: 0;
+    transition: ease-out 0.15s;
+    padding-left: 10px;
+  }
+.btn-card{
+    margin-left: 100px;
+    width: 10%;
+    
+}
+
+
+@media(max-width:767px){
+    .grid{
+        margin-left: 20px;
+        grid-template-columns: 1fr;
+    }
+    .btn-card{
+        width: 30%;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+}
