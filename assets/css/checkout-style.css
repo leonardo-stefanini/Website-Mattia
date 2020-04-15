@@ -1,6 +1,9 @@
 @import url(/assets/css/style.css);
 
-
+h2{
+    margin-left: 100px;
+    margin-top: 50px;
+}
 .grid{
     margin-top: 50px;
     margin-left: 100px;
@@ -34,7 +37,7 @@
     width: 10%;
     
 }
-.tipo-carta{
+.tipo-carta,.cvv-input,.scadenza-input{
     width: 50%;
     border: 1px solid var(--color-black);
 }

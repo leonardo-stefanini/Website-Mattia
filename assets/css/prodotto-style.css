@@ -1,5 +1,7 @@
 @import url(/assets/css/style.css);
 
+
+  
 .card {
     display: flex;
     justify-content: center;
@@ -9,9 +11,12 @@
     margin-top: 0;
 }
 
-.card img {
+
+.card img  {
     width: 30%;
+    
 }
+
 
 .descrizione {
     margin: 40px 0;
@@ -116,6 +121,7 @@ button {
 }*/
 
 @media(max-width:767px){
+  
     .card{
     padding-top: 90px;
     margin-bottom: 60px;}
