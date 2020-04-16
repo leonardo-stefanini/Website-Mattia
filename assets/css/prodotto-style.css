@@ -12,8 +12,28 @@
 }
 
 
-.card img  {
-    width: 30%;
+.slider  {
+    width: 30%; 
+    background-image: url("/assets/img/dentifricio.jpg");
+    background-size: cover;
+    height: 350px;
+    
+}
+
+.shift-sx{
+    z-index: 100;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-left: 15px;
+    
+}
+.shift-dx{
+    float: right;
+    z-index: 100;
+    position: relative;
+    top: 50%;
+    margin-right: 15px;
     
 }
 
@@ -126,7 +146,10 @@ button {
     padding-top: 90px;
     margin-bottom: 60px;}
 
-    .card img{width:80%;}
+    .slider{
+        height: 250px;
+        width:90%;
+    }
 
     .descrizione{margin: 20px 0;}
 
