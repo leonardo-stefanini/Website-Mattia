@@ -31,9 +31,5 @@
               let $slider = $('.swiper-container')
               $nav.toggleClass('dark', $(this).scrollTop() > $slider.height());
               });
-
-       $(".header__icon-bar").click(() => {
-              $(".header").toggleClass('clicked');
-            });
      });
 
