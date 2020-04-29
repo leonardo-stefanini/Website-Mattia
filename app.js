@@ -1,4 +1,23 @@
-const Router = require('./lib/Router');
-const router = new Router(3000);
+const express = require('express');
+const exphbs = require('express-handlebars');
+const path = require('path');
 
-router.run_service();
+
+let app = express();
+let port = process.env.PORT || 3000;
+ 
+app.engine('.hbs', exphbs({
+  defaultLayout: false,
+  extname: '.hbs'
+}));
+app.set('view engine', '.hbs');
+
+
+app.use('/assets', express.static(__dirname + '/assets'))
+ 
+app.get('/', (req, res) => res.render('index'));
+app.get('/product-page', (req, res) => res.render('pagina-prodotto', {layout: false}));
+app.get('/checkout', (req, res) => res.render('checkout', {layout: false}));
+
+ 
+app.listen(port, () => console.log(`Listening to port ${port}, close the connection with Ctrl+C `));

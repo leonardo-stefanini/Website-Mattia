@@ -1,15 +1,19 @@
 @import url(/assets/css/style.css);
 
-
-.header{
-    background: var(--color-black);
+.header {
+    background: var(--color-white);
 }
+
+.header.normal {
+    background: var(--color-white);
+}
+
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    padding-top: 130px;
+    margin-bottom: 10%;
+    padding-top: 10%;
     margin-top: 0;
 }
 
@@ -17,7 +21,6 @@
 .card img{
     width: 30%; 
 }
-
 
 
 .descrizione {
@@ -38,6 +41,7 @@
 .sign {
     height: 30px;
     width: 30px;
+    border-radius: 0;
 }
 
 .fa, .fas {
@@ -124,12 +128,14 @@ button {
 
 @media(max-width:767px){
   
-    .card{
-    padding-top: 90px;
-    margin-bottom: 60px;}
+.card{
+    margin-bottom: 60px;
+    padding-top: 0 !important;
+}
 
    .card img{
        width: 90%;
+       margin-top: 0 !important;
    }
 
     .descrizione{margin: 20px 0;}

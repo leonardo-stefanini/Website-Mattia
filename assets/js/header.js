@@ -13,7 +13,7 @@
                      prevEl: '.swiper-button-prev',
               },
                autoplay: {
-                     delay: 7000,
+                     delay: 6000,
                      disableOnInteraction: false,
               },
               direction: 'horizontal',
@@ -29,7 +29,7 @@
        $(document).scroll(() => {
               let $nav = $(".header");
               let $slider = $('.swiper-container')
-              $nav.toggleClass('dark', $(this).scrollTop() > $slider.height());
+              $nav.toggleClass('normal', $(this).scrollTop() > 10);
               });
      });
 

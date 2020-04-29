@@ -2,7 +2,11 @@
 
   --color-black: #1d1d1d;
   --color-white: #ffffff;
-  --color-header-hover:#333;
+  --color-header-hover:rgb(243, 240, 240);
+
+
+  --swiper-theme-color: #fff;
+  --swiper-navigation-size: 30px;
 }
 
 
@@ -10,6 +14,7 @@ html,
 body {
   height: 100%;
   line-height: 1.25 !important;
+  /*text-rendering: optimizeLegibility;*/
 }
 
 body {
@@ -23,9 +28,14 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+::selection {
+  color: inherit;
+  background: #f2f2f2;
+}
+
 .animate {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a{
@@ -37,12 +47,12 @@ a{
 .swiper-container,.swiper-wrapper,.swiper-slide,.swiper-slide img{
   width: 100%;
   height: 100%;
+  margin-bottom: 10%;
 }
+
 .swiper-button-prev, .swiper-button-next{
-  color: white;
   opacity: 0.7;
   outline: none !important;
-  
 }
 
 
@@ -66,9 +76,9 @@ a{
   /*box-shadow: 0 1px 5px rgba(0, 0, 0, .55);*/
 }
 
-.header.dark {
-  background-color: var(--color-black) !important;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .55);
+.header.normal {
+  background-color: var(--color-white) !important;
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, .55);*/
   transition: background-color 200ms ease-in-out;
 }
 
@@ -77,6 +87,7 @@ a{
   float: right;
   margin: 0;
   padding: 0;
+  background-color: var(--color-white) !important;
 }
 
 .header__menu__item {
@@ -84,14 +95,15 @@ a{
 }
 
 .header__menu__item a {
-  color: var(--color-white);
+  color: var(--color-black);
   display: block;
   padding: 20px;
+  font-weight: lighter;
 }
 
-/*.header__menu__item a:hover {
+.header__menu__item a:hover {
   background: var(--color-header-hover);
-} */
+} 
 
 .header__icon-bar {
   display: block;
@@ -104,7 +116,7 @@ a{
   display: block;
   height: 3px;
   width: 30px;
-  background: var(--color-white);
+  background: var(--color-black);
   margin-bottom: 5px;
 }
 
@@ -112,12 +124,11 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .card img {
-  width: 40%;
-
+  width: 30%;
 }
 
 .contenuto {
@@ -128,37 +139,39 @@ a{
 }
 
 .btn-card {
-  width: 40%;
+  width: 35%;
   padding: 10px;
-  background: var(--color-black);
-  color: var(--color-white);
-  border: solid 1px transparent;
+  background: transparent;
+  color: var(--color-black);
+  border: solid 1px var(--color-black);
   outline: 0 !important;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
-  transition: 0.3s ease-in-out;
+  transition: 0.20s ease-in-out;
   
 }
 
 
 .btn-card:hover {
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-black);
+  color: var(--color-white);
   border: solid 1px var(--color-black);
-  transition: 0.3s ease-in-out;
+  transition: 0.20s ease-in-out;
 
 }
 
 .descrizione {
   margin: 40px 0;
+  font-size: 0.8em;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
-  background: var(--color-black);
-  margin-top: 5%;
+  background: var(--color-white);
+  margin-top: 10%;
+  border-top: 1px solid var(--color-black);
 }
 
 .footer-section {
@@ -166,13 +179,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-black);
   
 }
 
 .footer-section a {
   margin: 20px;
-  color: var(--color-white);
+  color: var(--color-black);
   transition: 0.3s;
 }
 
@@ -204,7 +217,7 @@ footer {
       position: static;
       z-index: 100;
       width: 100%;
-      background: var(--color-black);
+      background: var(--color-white);
       box-shadow: none;
   }
 
@@ -236,6 +249,11 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
   }
+  
+  .btn-card {
+    width: 40%;
+  }
+
   .btn-card:hover {
     background: var(--color-black);
     color: var(--color-white);
@@ -252,11 +270,17 @@ footer {
 
   .card img {
       width: 90%;
+      margin-top: 20%;
   }
 
   .contenuto {
       width: 90%;
       margin-top: 20px;
+  }
+
+  .contenuto h3 {
+    text-transform: uppercase;
+    font-size: 1em;
   }
 
   .carta {
@@ -269,6 +293,7 @@ footer {
 
   footer {
       flex-direction: column;
+      margin-top: 30%;
   }
   .footer-section{
     margin-bottom: 20px;

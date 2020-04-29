@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/leonardo-stefanini/Website-Mattia#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
     "path": "^0.12.7"
   }
 }
