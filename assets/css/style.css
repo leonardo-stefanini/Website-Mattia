@@ -45,14 +45,69 @@ a{
 /* Slider */
 
 .swiper-container,.swiper-wrapper,.swiper-slide,.swiper-slide img{
+  position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 10%;
+  object-position: 50% 50%;
+  object-fit: cover;
 }
 
 .swiper-button-prev, .swiper-button-next{
   opacity: 0.7;
   outline: none !important;
+}
+
+/* Slider gradient */
+
+.swiper-slide:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000 77%);
+  opacity: 0.6;
+}
+
+/* Slider text cover */
+
+.swiper-slide .text-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.swiper-slide .title {
+  margin-left: 6.5vw;
+  margin-right: 6.5vw;
+  margin-bottom: 10%;
+  padding-right: 20%;
+}
+
+.swiper-slide .title h1 {
+  font-family: 'Oxygen', sans-serif;
+  color: var(--color-white);
+  max-width: 1280px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.swiper-slide .title p {
+  font-family: 'Oxygen', sans-serif;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.45;
 }
 
 
@@ -67,19 +122,21 @@ a{
 
 .header {
   background: rgba(0,0 ,0,0);
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0.43), rgba(0,0,0,0) );
   width: 100%;
   position: fixed;
   z-index: 1000;
   display: block;
   text-transform: uppercase;
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
   /*box-shadow: 0 1px 5px rgba(0, 0, 0, .55);*/
 }
 
 .header.normal {
   background-color: var(--color-white) !important;
+  background-image: none;
   /*box-shadow: 0 1px 5px rgba(0, 0, 0, .55);*/
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
 }
 
 
@@ -87,7 +144,6 @@ a{
   float: right;
   margin: 0;
   padding: 0;
-  background-color: var(--color-white) !important;
 }
 
 .header__menu__item {
@@ -95,29 +151,29 @@ a{
 }
 
 .header__menu__item a {
-  color: var(--color-black);
+  color: var(--color-white);
   display: block;
   padding: 20px;
   font-weight: lighter;
+  transition: color 100ms ease-in-out;
 }
 
-.header__menu__item a:hover {
-  background: var(--color-header-hover);
-} 
+.header__menu__item a.normal{
+  color: var(--color-black);
+  transition: color 100ms ease-in-out;
+}
 
 .header__icon-bar {
   display: block;
   float: right;
   padding: 20px;
   display: none;
+  color: var(--color-white)
 }
 
-.header__icon-bar span {
-  display: block;
-  height: 3px;
-  width: 30px;
-  background: var(--color-black);
-  margin-bottom: 5px;
+.header__icon-bar.normal {
+  color: var(--color-black);
+  transition: color 100ms ease-in-out;
 }
 
 .card {
@@ -164,13 +220,55 @@ a{
 .descrizione {
   margin: 40px 0;
   font-size: 0.8em;
+  color: var(--color-black);
+}
+.box-input {
+  border: 1px solid var(--color-black);
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  outline: 0 !important;
+  transition: ease-out 0.15s;
+  border-radius: 4px;
 }
 
+.box-input:focus::placeholder{
+  opacity: 0;
+  transition: ease-out 0.15s;
+  padding-left: 10px;
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  padding: 5%;
+  background-color: rgb(252, 252, 252);
+}
+.newsletter p{
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+.scatola{
+  display: flex;
+}
+.email-newsletter{
+  border-radius: 0px;
+  margin-right: 10px;
+  width: 500px
+}
+.email-conferma{
+  background: var(--color-black);
+  color: var(--color-white);
+}
+.email-conferma:hover{
+  background: var(--color-white);
+  color: var(--color-black);
+}
 footer {
   display: flex;
   justify-content: space-around;
   background: var(--color-white);
-  margin-top: 10%;
   border-top: 1px solid var(--color-black);
 }
 
@@ -214,10 +312,8 @@ footer {
 /*------------------------------ Smartphone -------------------------------*/
 @media (max-width: 767px) {
   .header {
-      position: static;
       z-index: 100;
       width: 100%;
-      background: var(--color-white);
       box-shadow: none;
   }
 
@@ -241,9 +337,18 @@ footer {
   }
   
   .swiper-container{
+    position: relative;
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
+
+  .swiper-slide .title {
+    margin-left: 4.5vw;
+    margin-right: 4.5vw;
+    margin-bottom: 7%;
+    padding-right: 11%;
+  }
+
   .swiper-button-prev, .swiper-button-next{
     zoom: 0.6;
     margin-left: 10px;
@@ -290,10 +395,16 @@ footer {
   .descrizione {
       margin: 20px;
   }
-
+  .newsletter{
+    padding-left:20px;
+    padding-right: 20px;
+  }
+  .email-newsletter{
+    width: 250px;
+  }
   footer {
       flex-direction: column;
-      margin-top: 30%;
+      margin-top: 15%;
   }
   .footer-section{
     margin-bottom: 20px;

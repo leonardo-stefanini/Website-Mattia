@@ -8,6 +8,14 @@
     background: var(--color-white);
 }
 
+.header__menu__item a {
+    color: var(--color-black);
+}
+
+.header__icon-bar {
+    color: var(--color-black);
+  }
+
 .card {
     display: flex;
     justify-content: center;
@@ -15,13 +23,13 @@
     margin-bottom: 10%;
     padding-top: 10%;
     margin-top: 0;
+    
 }
 
 
 .card img{
     width: 30%; 
 }
-
 
 .descrizione {
     margin: 40px 0;
