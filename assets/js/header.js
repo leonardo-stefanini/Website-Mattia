@@ -8,10 +8,6 @@
 
     $(() => {
        var mySwiper = new Swiper ('.swiper-container', {
-              navigation: {
-                     nextEl: '.swiper-button-next',
-                     prevEl: '.swiper-button-prev',
-              },
                autoplay: {
                      delay: 6000,
                      disableOnInteraction: false,
@@ -27,9 +23,11 @@
 
      $(() => {
        $(document).scroll(() => {
-              let $nav = $(".header");
-              let $slider = $('.swiper-container')
-              $nav.toggleClass('normal', $(this).scrollTop() > 10);
+              let $nav = $(".header")
+              let $text = $('.header__menu__item a')
+              let $hamburger = $('.header__icon-bar')
+              $nav.toggleClass('normal', $(this).scrollTop() > 50)
+              $text.toggleClass('normal', $(this).scrollTop() > 50)
+              $hamburger.toggleClass('normal', $(this).scrollTop() > 50)
               });
      });
-
