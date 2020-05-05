@@ -12,12 +12,16 @@
 </head>
 
 <body>
-    <header class="header clearfix">
+     <header class="header clearfix">
         <img src="/assets/img/tooth.svg" alt="" srcset="">
         <a href="" class="header__icon-bar">
-            <span></span>
-            <span></span>
-            <span></span>
+            <svg width="24px" height="24px" viewBox="0 0 24 24">
+	        <g fill-rule="evenodd">
+    	        <rect fill="currentColor" x="0" y="5" width="24" height="2" rx="1"></rect>
+                <rect fill="currentColor" x="0" y="11" width="24" height="2" rx="1"></rect>
+                <rect fill="currentColor" x="0" y="17" width="24" height="2" rx="1"></rect>
+            </g>
+            </svg>
         </a>
         <ul class="header__menu animate">
             <li class="header__menu__item"><a href="/">Home</a></li>
@@ -37,7 +41,7 @@
                 <a class="btn-card" href="/checkout">Checkout</a>
                 <div class="quantità">
                     <button class="btn-card sign"><i class="fas fa-plus"></i></button>
-                    <p class="numero-quantità"><span>1</span></p>
+                    <p class="numero-quantità">{{quantity}}</p>
                     <button class="btn-card sign"><i class="fas fa-minus"></i></button>
                 </div>
             </div>

@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +21,13 @@
     <header class="header clearfix">
         <img src="/assets/img/tooth.svg" alt="" srcset="">
         <a href="" class="header__icon-bar">
-            <span></span>
-            <span></span>
-            <span></span>
+            <svg width="24px" height="24px" viewBox="0 0 24 24">
+	        <g fill-rule="evenodd">
+    	        <rect fill="currentColor" x="0" y="5" width="24" height="2" rx="1"></rect>
+                <rect fill="currentColor" x="0" y="11" width="24" height="2" rx="1"></rect>
+                <rect fill="currentColor" x="0" y="17" width="24" height="2" rx="1"></rect>
+            </g>
+            </svg>
         </a>
         <ul class="header__menu animate">
             <li class="header__menu__item"><a href="/">Home</a></li>
@@ -32,20 +37,26 @@
         </ul>
     </header>
 
+    <!--Swiper Js -->
+
     <div class="swiper-container">
       <div class="swiper-wrapper">
 
-          <div class="swiper-slide"><img src="/assets/img/stocazzo.jpg" loading="lazy" alt=""></div>
-          <div class="swiper-slide"><img src="https://b2.crackwatch.com/file/crackwatch-temp/8gs8z2z1v.jpg" loading="lazy" alt=""></div>
-          <div class="swiper-slide"><img src="/assets/img/stocazzo.jpg" loading="lazy" alt=""></div>
-          
-      </div>
+        <div class="swiper-slide">
+            <img src="/assets/img/stocazzo.jpg" loading="lazy" alt="">
+            <div class="text-cover">
+                <div class="title">
+                    <h1>Lorem Ipsum Dolor</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
 
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      </div>
   
   </div>
 
+    <!--Card Sections-->
 
     <section class="contenitore">
         <div class="card" id="card-1">
@@ -67,6 +78,15 @@
         </div>
 
     </section>
+
+     <section class="newsletter">
+           <p>Iscriviti per conoscere tutte le otterte del nostro store</p>
+           <div class="scatola">
+               <input class="email-newsletter box-input" type="text" placeholder="E-mail">
+               <span></span>
+               <button class="email-conferma btn-card">Vai</button>
+           </div>
+     </section>
 
     <footer>
         <div class="footer-section">
