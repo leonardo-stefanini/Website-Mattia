@@ -28,6 +28,9 @@ h2{
     width: 50%;
     border: 1px solid var(--color-black);
 }
+.footer{
+    margin-top: 10%;
+}
 
 
 @media(max-width:767px){

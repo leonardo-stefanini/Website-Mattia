@@ -1,7 +1,7 @@
-@import url(/assets/css/style.css);
+@import 'style.css';
 
 .header {
-    background: var(--color-white);
+    background: none;
 }
 
 .header.normal {
@@ -9,11 +9,18 @@
 }
 
 .header__menu__item a {
-    color: var(--color-black);
+    color: black;
+}
+
+.header__menu__item a.is-open {
+    color: var(--color-white);
 }
 
 .header__icon-bar {
     color: var(--color-black);
+  }
+  .croce{
+    color: var(--color-white);
   }
 
 .card {
@@ -68,73 +75,8 @@
     margin-bottom: 5%;
 }
 
-/*.commenti {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 50%;
-    margin-bottom: 80px;
-}
-
-.commenti-input {
-    max-width: 500px;
-    width: 100%;
-    resize: none;
-    border: solid 1px var(--color-black);
-}
-
-.commenti h3,
-input,
-button {
-    margin: 20px 0;
-}
-
-.box-commenti {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-bottom: 0.5px solid black;
-    padding: 10px;
-}
-
-.informazioni {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.foto-testo {
-    display: flex;
-    align-items: center;
-}
-
-.immagine-prodotto {
-    height: 80px;
-}
-
-.acquisto-verificato img {
-    height: 15px;
-}
-
-.contenuto-commento {
-    margin-left: 10%;
-}
-
-.nome,
-.foto-testo,
-.acquisto-verficato {
-    margin: 10px 0;
-}
-
-.immagine-prodotto {
-    margin-right: 20px;
-}*/
-
 @media(max-width:767px){
+
   
 .card{
     margin-bottom: 60px;
@@ -143,8 +85,16 @@ button {
 
    .card img{
        width: 90%;
-       margin-top: 0 !important;
+       margin-top: 10%;
    }
+
+   #card-2 {
+    height: 100%;
+}
+
+.footer {
+    margin-top: 20%;
+}
 
     .descrizione{margin: 20px 0;}
 
@@ -152,13 +102,5 @@ button {
 
     .sign {width: 100% !important;}
 
-    /*.commenti{
-        margin-right: 10%;
-        margin-bottom: 60px;
-    }
-
-    .box-commenti{flex-direction: column;}
-
-    .informazioni{margin-bottom: 30px;}*/
 
 }

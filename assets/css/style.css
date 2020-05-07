@@ -20,12 +20,16 @@ body {
 body {
   background: var(--color-white);
 }
+.no-scroll{
+  overflow-y: hidden;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
@@ -33,10 +37,6 @@ body {
   background: #f2f2f2;
 }
 
-.animate {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 
 a{
   text-decoration: none;
@@ -49,7 +49,7 @@ a{
   width: 100%;
   height: 100%;
   margin-bottom: 10%;
-  object-position: 50% 50%;
+  object-position: center center;
   object-fit: cover;
 }
 
@@ -89,7 +89,7 @@ a{
 .swiper-slide .title {
   margin-left: 6.5vw;
   margin-right: 6.5vw;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   padding-right: 20%;
 }
 
@@ -97,7 +97,7 @@ a{
   font-family: 'Oxygen', sans-serif;
   color: var(--color-white);
   max-width: 1280px;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 1;
 }
@@ -105,7 +105,7 @@ a{
 .swiper-slide .title p {
   font-family: 'Oxygen', sans-serif;
   color: var(--color-white);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -118,6 +118,7 @@ a{
   position: relative;
   margin-left: 30px;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .header {
@@ -155,6 +156,7 @@ a{
   display: block;
   padding: 20px;
   font-weight: lighter;
+  letter-spacing: 1px;
   transition: color 100ms ease-in-out;
 }
 
@@ -163,19 +165,31 @@ a{
   transition: color 100ms ease-in-out;
 }
 
+.header__menu__item a.normal.is-open{
+  color: var(--color-white);
+  transition: color 100ms ease-in-out;
+}
+
 .header__icon-bar {
   display: block;
   float: right;
   padding: 20px;
   display: none;
-  color: var(--color-white)
+  color: var(--color-white);
+}
+.croce{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  padding: 20px;
+  display: none;
+  color: var(--color-white);
 }
 
 .header__icon-bar.normal {
   color: var(--color-black);
   transition: color 100ms ease-in-out;
 }
-
 .card {
   display: flex;
   justify-content: center;
@@ -189,7 +203,7 @@ a{
 
 .contenuto {
   margin: 0 40px;
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }
@@ -317,23 +331,40 @@ footer {
       box-shadow: none;
   }
 
-  .header__icon-bar {
+  .header__icon-bar,.croce{
       display: block;
-      
   }
   .header__menu {
       width: 100%;
-      height: 0px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
-  }
+      position: absolute;
+      transform: translateX(100%);
+      left: 0%;
+      background: black;
+      z-index: 400;
+}
 
   .header__menu__item {
       display: block;
   }
-
+  .header__menu__item a {
+    color: var(--color-white);
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2rem;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 30px;
+    transition: 300ms ease-in;
+  }
   .is-open {
-      height: 250px;
       overflow: hidden;
+      transform: translateX(0%) translateZ(0px);
   }
   
   .swiper-container{
@@ -345,14 +376,25 @@ footer {
   .swiper-slide .title {
     margin-left: 4.5vw;
     margin-right: 4.5vw;
-    margin-bottom: 7%;
-    padding-right: 11%;
+    margin-bottom: 20%;
+    padding-right: 10%;
   }
 
-  .swiper-button-prev, .swiper-button-next{
-    zoom: 0.6;
-    margin-left: 10px;
-    margin-right: 10px;
+  .swiper-slide .title h1 {
+    font-family: 'Oxygen', sans-serif;
+    color: var(--color-white);
+    max-width: 1280px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .swiper-slide .title p {
+    font-family: 'Oxygen', sans-serif;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.45;
   }
   
   .btn-card {
@@ -375,7 +417,7 @@ footer {
 
   .card img {
       width: 90%;
-      margin-top: 20%;
+      margin-top: 15%;
   }
 
   .contenuto {
@@ -398,13 +440,13 @@ footer {
   .newsletter{
     padding-left:20px;
     padding-right: 20px;
+    margin-top: 20%;
   }
   .email-newsletter{
     width: 250px;
   }
   footer {
       flex-direction: column;
-      margin-top: 15%;
   }
   .footer-section{
     margin-bottom: 20px;
