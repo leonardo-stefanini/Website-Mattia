@@ -23,5 +23,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
   }
 }
