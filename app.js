@@ -23,11 +23,10 @@ app.use('/assets', express.static(__dirname + '/assets'))
 app.get('/', (req, res) => res.render('index'));
 app.get('/product-page', (req, res) => res.render('pagina-prodotto', {
 
-  layout: false, 
   quantity: Math.floor(Math.random() * 10)
 
 }));
-app.get('/checkout', (req, res) => res.render('checkout', {layout: false}));
+app.get('/checkout', (req, res) => res.render('checkout'));
 
  
 app.listen(port, () => console.log(`Listening to port ${port}, close the connection with Ctrl+C `));
