@@ -43,7 +43,7 @@
 
     $(() => {
        var mySwiper = new Swiper ('.swiper-container', {
-               autoplay: {
+              autoplay: {
                      delay: 6000,
                      disableOnInteraction: false,
               },
@@ -51,5 +51,12 @@
               loop: true,
               speed: 600,
               effect: 'slide',
+              pagination: {
+                     el: '.swiper-pagination',
+                     clickable: true,
+                     renderBullet: function (index, className) {
+                       return '<span class="' + className + '">' + '</span>';
+                     },
+                   },
        })
      });
